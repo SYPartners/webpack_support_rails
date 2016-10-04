@@ -68,11 +68,7 @@ Next lets scaffold the webpack config:
 
     $ rake webpack:init
 
-App entry points, webpack plugins, and additional loaders can be added in `config/webpack/common.config.js`
-
-Development specific config resides in `config/webpack/development.config.js`
-
-Production specific config resides in `config/webpack/production.config.js`
+App entry points, webpack plugins, and additional loaders can be added in `config/webpack/common.config.js`. You will need to create this and it must be a webpack config object. It is merged into the defaults, so there may be unexpected behavior.
 
 To run webpack in development mode and watch for changes use:
 
