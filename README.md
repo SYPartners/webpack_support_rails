@@ -68,6 +68,8 @@ Next lets scaffold the webpack config:
 
     $ rake webpack:init
 
+App entry points are autoMAGICALLY generated from `.js`, `.js6`, and `.jsx` files located in `app/assets/javascripts/entry`. The bundle name will be the file name without the extension eg: `some_file.js` will be bundled as `some_file`.
+
 App entry points, webpack plugins, and additional loaders can be added in `config/webpack/common.config.js`. You will need to create this and it must be a webpack config object. It is merged into the defaults, so there may be unexpected behavior.
 
 To run webpack in development mode and watch for changes use:
