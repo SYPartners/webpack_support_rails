@@ -5,7 +5,7 @@ This is a **HIGHLY OPINIONATED** way to use webpack with Rails
 ## TODOs
 
 - [ ] generate an initializer and set config values there
-- [ ] have all sourcemaps removed with their main js bundle file
+- [x] have all sourcemaps removed with their main js bundle file
 - [x] move all default config into gem (maybe - not sure how i feel about this)
 - [ ] have config be extendable through js config objects and leave our boilerplate untouched
 
