@@ -1,7 +1,7 @@
 namespace :webpack do
   desc "Runs the initialization generator"
   task :init do
-    system "rails g webpack_support_rails:initialize"
+    system "rails g webpack_support_rails:initializer"
   end
 
   desc "Copy's the common config into config/webpack"

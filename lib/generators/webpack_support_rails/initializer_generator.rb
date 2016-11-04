@@ -5,7 +5,7 @@ module WebpackSupportRails
     source_root File.expand_path('../templates', __FILE__)
 
     desc 'Webpack Support Rails installation generator'
-    def initialize
+    def initializer
       template 'initializer.erb', 'config/initializers/webpack_support_rails.rb'
     end
   end
