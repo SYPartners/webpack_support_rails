@@ -9,7 +9,7 @@ module WebpackSupportRails
     end
 
     def webpack_bundle_inline(bundle)
-      return webpack_bundle_tag(bundle) if Rails.configuration.webpack_support.bypass_inline_webpack
+      return webpack_bundle_tag(bundle) if WebpackSupportRails.bypass_inline_webpack
       filename = WebpackSupport.bundle_file(bundle)
       javascript_tag File.read(Rails.root.join('public', 'assets', 'javascripts', filename))
     end

@@ -22,20 +22,10 @@ And then execute:
     $ bundle install
 
 ## Configuration
+                                                                                                                                                                                                                                                       
+    $ rake webpack:init
 
-The following can be set in `config/application.rb`
-
-```ruby
-# Forces the webpack manifest to be updated on every page request.
-# Set to true for development
-# Set to false in production to increase response speed
-# Default: true
-config.webpack_support.update_webpack_manifest_every_request = true
-
-# When set to true, all js bundles will be loaded externally instead of inlined.
-# Default: false
-config.webpack_support.bypass_inline_webpack = false
-```
+This creates the following file where config can be set: `config/initializers/webpack_support_rails.rb`
 
 ## Usage
 

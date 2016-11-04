@@ -1,4 +1,9 @@
 namespace :webpack do
+  desc "Runs the initialization generator"
+  task :init do
+    system "rails g webpack_support_rails:initialize"
+  end
+
   desc "Copy's the common config into config/webpack"
   task :customize do
     puts "Let's do this!"

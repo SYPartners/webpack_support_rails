@@ -9,7 +9,7 @@ module WebpackSupportRails
     end
 
     def self.update_manifests
-      return if !(Rails.configuration.webpack_support.update_webpack_manifest_every_request || @asset_manifest.nil? || @chunk_manifest_json.nil?)
+      return if !(WebpackSupportRails.update_webpack_manifest_every_request || @asset_manifest.nil? || @chunk_manifest_json.nil?)
 
       raise "Can't find asset map at #{asset_map_path}!" unless File.exist?(asset_map_path)
       raise "Can't find chunk manifest at #{chunk_manifest_path}!" unless File.exist?(chunk_manifest_path)
