@@ -11,36 +11,15 @@ This is a **HIGHLY OPINIONATED** way to use webpack with Rails
 
 ## Installation (for realz)
 
-In your project root (same directory as gem file)
-
-    $ git clone https://github.com/SYPartners/webpack_support_rails.git
-
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'webpack_support_rails', :path => "webpack_support_rails"
+gem 'webpack_support_rails', :git => 'https://github.com/sypartners/webpack_support_rails.git', :branch => 'master'
 ```
 
 And then execute:
 
     $ bundle install
-
-
-## Installation (boilerplate)
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'webpack_support_rails'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install webpack_support_rails
 
 ## Configuration
 
@@ -64,13 +43,11 @@ This assumes you already have node and npm installed. Run the following:
 
     $ npm i webpack glob chunk-manifest-webpack-plugin lodash babel-loader babel-core babel-preset-es2015 --save-dev
 
-Next lets scaffold the webpack config:
-
-    $ rake webpack:init
-
 App entry points are autoMAGICALLY generated from `.js`, `.js6`, and `.jsx` files located in `app/assets/javascripts/entry`. The bundle name will be the file name without the extension eg: `some_file.js` will be bundled as `some_file`.
 
-App entry points, webpack plugins, and additional loaders can be added in `config/webpack/common.config.js`. You will need to create this and it must be a webpack config object. It is merged into the defaults, so there may be unexpected behavior.
+App entry points, webpack plugins, and additional loaders can be added in `config/webpack/common.config.js`. You will need to create this and it must be a webpack config object. It is merged into the defaults, so there may be unexpected behavior. To scaffold the webpack config:
+                                                                                                                                                                                                                                                       
+    $ rake webpack:customize
 
 To run webpack in development mode and watch for changes use:
 
