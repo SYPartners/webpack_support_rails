@@ -16,12 +16,12 @@ namespace :webpack do
 
   desc "Runs webpack in development mode with the --watch flag."
   task :watch do
-    system "env CURRENT_RAILS_ROOT=#{Rails.root} webpack --config=#{gem_lib_js_path}/development.config.js --watch"
+    system "env CURRENT_RAILS_ROOT=#{Rails.root} webpack --config=node_modules/webpack-support-rails/config/development.config.js --watch"
   end
 
   desc "Runs webpack in production mode/"
   task :prod do
-    system "env CURRENT_RAILS_ROOT=#{Rails.root} webpack --config=#{gem_lib_js_path}/production.config.js"
+    system "env CURRENT_RAILS_ROOT=#{Rails.root} webpack --config=node_modules/webpack-support-rails/config/production.config.js"
   end
 end
 
