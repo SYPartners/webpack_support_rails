@@ -22,16 +22,15 @@ And then execute:
     $ bundle install
 
 ## Configuration
+
+This assumes you already have node and npm installed. Run the following:
                                                                                                                                                                                                                                                        
     $ rake webpack:init
 
 This creates the following file where config can be set: `config/initializers/webpack_support_rails.rb`
+This also creates a package.json if it doesnt exist, and installs all the needed dependancies.
 
 ## Usage
-
-This assumes you already have node and npm installed. Run the following:
-
-    $ npm i webpack glob chunk-manifest-webpack-plugin lodash babel-loader babel-core babel-preset-es2015 --save-dev
 
 App entry points are autoMAGICALLY generated from `.js`, `.js6`, and `.jsx` files located in `app/assets/javascripts/entry`. The bundle name will be the file name without the extension eg: `some_file.js` will be bundled as `some_file`.
 
