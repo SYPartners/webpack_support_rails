@@ -28,13 +28,13 @@ This assumes you already have node and npm installed. Run the following:
     $ rake webpack:init
 
 This creates the following file where config can be set: `config/initializers/webpack_support_rails.rb`
-This also creates a package.json if it doesnt exist, and installs all the needed dependancies.
+This also creates a package.json if it doesn't exist, and installs all the needed dependancies.
 
 If for some reason, you need to run npm with `sudo` the above command will fail and you can run the following manually:
 
     $ sudo npm init
     
-    $ sudo npm i webpack glob chunk-manifest-webpack-plugin lodash babel-loader babel-core babel-preset-es2015 https://github.com/sypartners/webpack-support-rails.git --save-dev
+    $ sudo npm i webpack glob chunk-manifest-webpack-plugin lodash babel-loader babel-core babel-preset-es2015 https://github.com/sypartners/webpack-support-rails.git#v0.1.0 --save-dev
 
     $ rails g webpack_support_rails:initializer
 
