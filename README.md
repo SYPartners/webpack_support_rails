@@ -5,7 +5,7 @@ This is a **HIGHLY OPINIONATED** way to use webpack with Rails
 ## TODOs
 
 - [x] generate an initializer and set config values there
-- [x] have all sourcemaps removed with their main js bundle file
+- [x] have all source maps removed with their main js bundle file
 - [x] move all default config into gem (maybe - not sure how i feel about this)
 - [x] have config be extendable through js config objects and leave our boilerplate untouched
 
@@ -14,7 +14,7 @@ This is a **HIGHLY OPINIONATED** way to use webpack with Rails
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'webpack_support_rails', :git => 'https://github.com/sypartners/webpack_support_rails.git', :branch => 'master'
+gem 'webpack_support_rails', :git => 'https://github.com/sypartners/webpack_support_rails.git', :tag => 'v0.1.0'
 ```
 
 And then execute:

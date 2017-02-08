@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "webpack_support_rails"
   spec.version       = WebpackSupportRails::VERSION
   spec.authors       = ["Erik Belusic"]
-  spec.email         = ["erikbelusic@outlook.com"]
+  spec.email         = ["ebelusic@sypartners.com"]
 
   spec.summary       = 'Write a short summary, because Rubygems requires one.'
   spec.description   = 'Write a longer description or delete this line.'
