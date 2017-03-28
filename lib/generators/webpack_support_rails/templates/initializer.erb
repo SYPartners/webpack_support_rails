@@ -1,9 +1,11 @@
 # Forces the webpack manifest to be updated on every page request.
 # Set to true for development
 # Set to false in production to increase response speed
-# Default: true
-WebpackSupportRails.update_webpack_manifest_every_request = true
+# Default: !Rails.env.production?
+WebpackSupportRails.update_webpack_manifest_every_request = !Rails.env.production?
 
 # When set to true, all js bundles will be loaded externally instead of inlined.
-# Default: false
-WebpackSupportRails.bypass_inline_webpack = false
+# Set to true for development
+# Set to false in production to inline javascript
+# Default: !Rails.env.production?
+WebpackSupportRails.bypass_inline_webpack = !Rails.env.production?
