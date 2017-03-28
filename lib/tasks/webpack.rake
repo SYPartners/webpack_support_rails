@@ -5,7 +5,7 @@ namespace :webpack do
     system 'npm init --force' unless File.exists? "#{Rails.root}/package.json"
     system 'npm i webpack glob chunk-manifest-webpack-plugin lodash babel-loader babel-core babel-preset-es2015 https://github.com/sypartners/webpack-support-rails.git#v0.1.1 --save-dev'
     system "rails g webpack_support_rails:initializer"
-    Dir.mkdir_p "#{Rails.root}/app/assets/javascripts/entry" unless File.exists? "#{Rails.root}/app/assets/javascripts/entry"
+    FileUtils.mkdir_p "#{Rails.root}/app/assets/javascripts/entry" unless File.exists? "#{Rails.root}/app/assets/javascripts/entry"
   end
 
   desc "Copy's the common config into config/webpack"
