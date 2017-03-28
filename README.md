@@ -28,7 +28,10 @@ This assumes you already have node and npm installed. Run the following:
     $ rake webpack:init
 
 This creates the following file where config can be set: `config/initializers/webpack_support_rails.rb`
-This also creates a package.json if it doesn't exist, and installs all the needed dependancies.
+
+The default values are dependant on the Rails environment and will be sensible for both prod and development. 
+
+This also creates a package.json if it doesn't exist, and installs all the needed dependencies.
 
 If for some reason, you need to run npm with `sudo` the above command will fail and you can run the following manually:
 
