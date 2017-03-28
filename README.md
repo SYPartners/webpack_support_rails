@@ -14,7 +14,7 @@ This is a **HIGHLY OPINIONATED** way to use webpack with Rails
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'webpack_support_rails', :git => 'https://github.com/sypartners/webpack_support_rails.git', :tag => 'v0.1.1'
+gem 'webpack_support_rails', :git => 'https://github.com/sypartners/webpack_support_rails.git', :tag => 'v0.1.2'
 ```
 
 And then execute:
@@ -37,7 +37,7 @@ If for some reason, you need to run npm with `sudo` the above command will fail 
 
     $ sudo npm init
     
-    $ sudo npm i webpack glob chunk-manifest-webpack-plugin lodash babel-loader babel-core babel-preset-es2015 https://github.com/sypartners/webpack-support-rails.git#v0.1.0 --save-dev
+    $ sudo npm i webpack glob chunk-manifest-webpack-plugin lodash babel-loader babel-core babel-preset-es2015 https://github.com/sypartners/webpack-support-rails.git#v0.1.1 --save-dev
 
     $ rails g webpack_support_rails:initializer
 
