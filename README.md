@@ -14,7 +14,7 @@ This is a **HIGHLY OPINIONATED** way to use webpack with Rails
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'webpack_support_rails', :git => 'https://github.com/sypartners/webpack_support_rails.git', :tag => 'v0.1.2'
+gem 'webpack_support_rails', :git => 'https://github.com/sypartners/webpack_support_rails.git', :tag => 'v0.1.3'
 ```
 
 And then execute:
