@@ -21,7 +21,7 @@ You'll need [node](https://nodejs.org/) and [npm](https://www.npmjs.com/) instal
 
 ### Prep
 
-This probably only works when you rails isn't doing anything with Javascript. We start our projects like this:
+This gem probably only works when rails isn't doing anything with Javascript. We start our projects like this:
 
     $ rails new --skip-javascript --skip-turbolinks app_name
 
