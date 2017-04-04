@@ -11,6 +11,8 @@ This is a **HIGHLY OPINIONATED** way to use webpack with Rails
 
 ## Installation (for realz)
 
+    $ rails new --skip-javascript --skip-turbolinks app
+
 Add this line to your application's Gemfile:
 
 ```ruby
