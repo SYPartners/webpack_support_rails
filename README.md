@@ -37,7 +37,7 @@ gem 'webpack_support_rails', :git => 'https://github.com/sypartners/webpack_supp
 
 ##### NVM
 
-If you're using nvm (or can run npm with sudo), this init task will install the necessary node packages:
+If you're using nvm (or can run npm without sudo), this init task will install the necessary node packages:
 
     $ rake webpack:init
 
