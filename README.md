@@ -46,7 +46,7 @@ If you're using nvm (or can run npm with sudo), this init task will install the 
 If you're not using nvm (or you need to run npm with `sudo`) the init task will fail. You can run the following manually:
 
     $ sudo npm init
-    $ sudo npm i webpack glob chunk-manifest-webpack-plugin lodash babel-loader babel-core babel-preset-es2015 https://github.com/sypartners/webpack-support-rails.git#v0.1.1 --save-dev
+    $ sudo npm i webpack@^2.3 glob@^7.1 chunk-manifest-webpack-plugin@^1.0 lodash@^4.16 babel-loader@^6.2 babel-core@^6.18 babel-preset-es2015@^6.18 https://github.com/sypartners/webpack-support-rails.git --save-dev
 
 ### Add the common bundle to the application layout.
 
