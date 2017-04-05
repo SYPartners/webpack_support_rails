@@ -2,7 +2,7 @@ namespace :webpack do
   desc "Runs the initialization generator"
   task :init do
     fail 'npm cannot be found' unless system 'which npm'
-    system 'npm init --force' unless File.exists? "#{Rails.root}/package.json"
+    system 'npm init --yes' unless File.exists? "#{Rails.root}/package.json"
     system 'npm i webpack@^2.3 glob@^7.1 chunk-manifest-webpack-plugin@^1.0 lodash@^4.16 babel-loader@^6.2 babel-core@^6.18 babel-preset-es2015@^6.18 https://github.com/sypartners/webpack-support-rails.git --save-dev'
     system "rails g webpack_support_rails:initializer"
     FileUtils.mkdir_p "#{Rails.root}/app/assets/javascripts/entry" unless File.exists? "#{Rails.root}/app/assets/javascripts/entry"
